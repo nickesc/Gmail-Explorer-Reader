@@ -14535,10 +14535,10 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Setting-up-the-environment">Setting up the environment<a class="anchor-link" href="#Setting-up-the-environment">&#182;</a></h3><h5 id="Installing-the-Google-client-library-(from-the-Gmail-API-Docs):">Installing the Google client library (from the <a href="https://developers.google.com/gmail/api/guides"><code>Gmail API Docs</code></a>):<a class="anchor-link" href="#Installing-the-Google-client-library-(from-the-Gmail-API-Docs):">&#182;</a></h5>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install --upgrade --upgrade-strategy<span class="o">=</span>only-if-needed google-api-python-client google-auth-httplib2 google-auth-oauthlib
@@ -14549,36 +14549,15 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h5 id="Installing-ipywidgets,-scikit-learn-and-seaborn:">Installing ipywidgets, scikit-learn and seaborn:<a class="anchor-link" href="#Installing-ipywidgets,-scikit-learn-and-seaborn:">&#182;</a></h5>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install --upgrade --upgrade-strategy<span class="o">=</span>only-if-needed ipywidgets scikit-learn seaborn
@@ -14587,27 +14566,6 @@ a.anchor-link {
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -14657,14 +14615,17 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Notebook-options">Notebook options<a class="anchor-link" href="#Notebook-options">&#182;</a></h3>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dev</span><span class="o">=</span><span class="p">[</span><span class="kc">False</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">credentials</span> <span class="o">=</span> <span class="s2">&quot;credentials.json&quot;</span>
+<span class="n">tokenName</span> <span class="o">=</span> <span class="s2">&quot;token.json&quot;</span>
+<span class="n">dev</span><span class="o">=</span><span class="p">[</span><span class="kc">False</span><span class="p">]</span>
 <span class="n">chunks</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+
 <span class="n">devToggle</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">ToggleButtons</span><span class="p">(</span>
     <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;on&#39;</span><span class="p">,</span> <span class="s1">&#39;off&#39;</span><span class="p">],</span>
     <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Dev mode:&#39;</span><span class="p">,</span>
@@ -14697,62 +14658,11 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre></pre>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre></pre>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre></pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Reading-Inboxes">Reading Inboxes<a class="anchor-link" href="#Reading-Inboxes">&#182;</a></h3><p>The <a href="https://developers.google.com/gmail/api/guides"><code>Gmail API</code></a> can be used to return a paginated list of all messages in a user's inbox, however it only returns the message IDs. So, first we need to get all the IDs, then we need to get all the messages with the IDs</p>
-<h4 id="Accessing-the-account">Accessing the account<a class="anchor-link" href="#Accessing-the-account">&#182;</a></h4><p>First, the user needs to log in to their gmail account and give it access to read everything. The  <a href="https://developers.google.com/gmail/api/guides"><code>Gmail API Docs</code></a> list these ase requirements for using the  <a href="https://developers.google.com/gmail/api/guides"><code>Gmail API</code></a>:</p>
+<h4 id="Accessing-the-account">Accessing the account<a class="anchor-link" href="#Accessing-the-account">&#182;</a></h4><p>First, the user needs to log in to their Google account and give it access to read everything. The  <a href="https://developers.google.com/gmail/api/guides"><code>Gmail API Docs</code></a> list these ase requirements for using the  <a href="https://developers.google.com/gmail/api/guides"><code>Gmail API</code></a>:</p>
 <blockquote><ol>
 <li><a href="https://developers.google.com/workspace/guides/create-project">A Google Cloud Platform project with the API enabled.</a></li>
 <li><a href="https://developers.google.com/workspace/guides/create-credentials">Authorization credentials for a desktop application</a></li>
@@ -14771,10 +14681,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">credentials</span> <span class="o">=</span> <span class="s2">&quot;credentials.json&quot;</span>
-<span class="n">tokenName</span> <span class="o">=</span> <span class="s2">&quot;token.json&quot;</span>
-
-<span class="k">def</span> <span class="nf">uploadFile</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">uploadFile</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
     <span class="n">clear_output</span><span class="p">()</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">credentials</span><span class="p">,</span> <span class="s2">&quot;w+b&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">i</span><span class="p">:</span>
         <span class="n">i</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">upload</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -14841,8 +14748,8 @@ a.anchor-link {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clearToken</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
     <span class="n">clear_output</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;token.json&quot;</span><span class="p">):</span>
-        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;token.json&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">tokenName</span><span class="p">):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">tokenName</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Session token cleared. Please run the next cell to log in.&quot;</span><span class="p">)</span>
     <span class="n">display</span><span class="p">(</span><span class="n">clear</span><span class="p">)</span>
 
@@ -14871,7 +14778,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Click to clear the current session token.
+<pre>Session token cleared. Please run the next cell to log in.
 </pre>
 </div>
 </div>
@@ -14928,7 +14835,7 @@ a.anchor-link {
 
         <span class="c1">#creds = flow.run_local_server(port=0)</span>
     <span class="c1"># Save the credentials for the next run</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;token.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">token</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tokenName</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">token</span><span class="p">:</span>
         <span class="n">token</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">creds</span><span class="o">.</span><span class="n">to_json</span><span class="p">())</span>
 
 <span class="k">try</span><span class="p">:</span>
@@ -14960,7 +14867,7 @@ a.anchor-link {
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&amp;client_id=xxx.apps.googleusercontent.com&amp;redirect_uri=xxx&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly&amp;state=xxx&amp;prompt=consent&amp;access_type=offline
-Enter the authorization code and press enter: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Enter the authorization code and press enter: XXXXXXXXXXXXXX
 
 Signed in to nickesc.media@gmail.com; continue to the next cell.
 
@@ -15085,10 +14992,10 @@ Signed in to nickesc.media@gmail.com; continue to the next cell.
 <p>Each entry in messages is a different message, with an <code>id</code> and a <code>threadId</code>. The <code>id</code> and <code>threadId</code> are usually the same, but when you respond to an email it starts a thread, and the entire thread shares the <code>threadId</code> to associate them, while the individual message keeps a unique <code>id</code>. Here, all we care about is the <code>id</code>, so we add each <code>id</code> into a <code>.csv</code> and dump the rest of the information.</p>
 <h4 id="Selecting-an-account-and-running-the-program">Selecting an account and running the program<a class="anchor-link" href="#Selecting-an-account-and-running-the-program">&#182;</a></h4>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">accounts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;jg&quot;</span><span class="p">,</span> <span class="s2">&quot;gd&quot;</span><span class="p">,</span> <span class="s2">&quot;ne&quot;</span><span class="p">,</span> <span class="s2">&quot;nm&quot;</span><span class="p">]</span>
@@ -15108,33 +15015,10 @@ Signed in to nickesc.media@gmail.com; continue to the next cell.
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre></pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Finally, the program asks the user to choose which account identifiers to use for the ID file, in case you have multiples accounts and want to make multiple ID files. Account identifiers are based of my own accounts, but have no impact on anything but file name. Run the next cell to start collecting IDs using the above functions</p>
+<p>Finally, the program asks the user to choose which account identifiers to use for the ID file, in case you have multiples accounts and want to make multiple ID files. Account identifiers are based of my own accounts, but have no impact on anything but file name. Run the next cell to start collecting IDs using the above functions.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">

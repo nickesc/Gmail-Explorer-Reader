@@ -58,8 +58,11 @@ from googleapiclient.errors import HttpError
 
 
 ```python
+credentials = "credentials.json"
+tokenName = "token.json"
 dev=[False]
 chunks=[10]
+
 devToggle = widgets.ToggleButtons(
     options=['on', 'off'],
     description='Dev mode:',
@@ -93,7 +96,7 @@ The [`Gmail API`](https://developers.google.com/gmail/api/guides) can be used to
 
 #### Accessing the account
 
-First, the user needs to log in to their gmail account and give it access to read everything. The  [`Gmail API Docs`](https://developers.google.com/gmail/api/guides) list these ase requirements for using the  [`Gmail API`](https://developers.google.com/gmail/api/guides):
+First, the user needs to log in to their Google account and give it access to read everything. The  [`Gmail API Docs`](https://developers.google.com/gmail/api/guides) list these ase requirements for using the  [`Gmail API`](https://developers.google.com/gmail/api/guides):
 
 > 1. [A Google Cloud Platform project with the API enabled.](https://developers.google.com/workspace/guides/create-project)
 > 2. [Authorization credentials for a desktop application](https://developers.google.com/workspace/guides/create-credentials)
@@ -109,9 +112,6 @@ The two files we need to communicate with the [`Gmail API`](https://developers.g
 
 
 ```python
-credentials = "credentials.json"
-tokenName = "token.json"
-
 def uploadFile(change):
     clear_output()
     with open(credentials, "w+b") as i:
@@ -132,8 +132,8 @@ display(upload)
 ```python
 def clearToken(b):
     clear_output()
-    if os.path.exists("token.json"):
-        os.remove("token.json")
+    if os.path.exists(tokenName):
+        os.remove(tokenName)
     print("Session token cleared. Please run the next cell to log in.")
     display(clear)
 
@@ -173,7 +173,7 @@ if not creds or not creds.valid:
 
         #creds = flow.run_local_server(port=0)
     # Save the credentials for the next run
-    with open('token.json', 'w') as token:
+    with open(tokenName, 'w') as token:
         token.write(creds.to_json())
 
 try:
