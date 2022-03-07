@@ -129,3 +129,14 @@ dmypy.json
 .pyre/
 
 .idea/
+.DS_Store
+
+credentials.json
+
+jgIDs.csv
+
+messages.csv
+
+nmIDs.csv
+
+token.json
